@@ -1,13 +1,16 @@
+
+
 .beneficios,
 .participacao {
   display: flex;
-  padding: 20px 0;
+  align-items: center; /* Isso alinha os filhos no centro vertical */
+  padding: 40px 0; /* Dá altura pra facilitar o alinhamento */
 }
 
 /* Bordas */
 .beneficios {
   border-top: 1px solid #ccc;
-  /* Remover a borda inferior duplicada */
+  border-bottom: none; /* Remove borda duplicada */
 }
 
 .participacao {
@@ -15,69 +18,22 @@
   border-bottom: 1px solid #ccc;
 }
 
-/* Benefícios */
+/* BENEFÍCIOS */
 .beneficios .texto {
   flex: 70%;
 }
 
 .beneficios .titulo {
   flex: 30%;
-  display: flex;
-  align-items: center; /* centraliza verticalmente */
-  justify-content: center;
+  text-align: center;
 }
 
-/* Participação */
+/* PARTICIPAÇÃO */
 .participacao .item {
   flex: 50%;
   padding: 10px;
 }
 
 .participacao .titulo-part {
-  display: flex;
-  align-items: center; /* centraliza verticalmente */
-  justify-content: center;
-}
-
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
   text-align: center;
-  width: 120px;
-}
-
-.beneficios,
-.participacao {
-  display: flex;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  padding: 20px 0;
-}
-
-/* Remover borda duplicada */
-.beneficios {
-  border-bottom: none;
-}
-
-.beneficios .texto {
-  flex: 70%;
-}
-
-.beneficios .titulo {
-  flex: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.participacao .item {
-  flex: 50%;
-  padding: 10px;
-}
-
-.titulo-part {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
